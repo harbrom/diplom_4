@@ -1,0 +1,20 @@
+program DudnikDB;
+
+uses
+  Forms,
+  uMain in '..\2\uMain.pas' {fmMain},
+  uStruct in '..\..\мой диплом\исходник\dbex1\DBEx1\uStruct.pas',
+  uAbout in '..\..\мой диплом\исходник\dbex1\DBEx1\uAbout.pas' {fmAbout},
+  uAddEditEntry in '..\..\мой диплом\исходник\dbex1\DBEx1\uAddEditEntry.pas' {fmAddEditEntry},
+  uSearch in '..\..\мой диплом\исходник\dbex1\DBEx1\uSearch.pas' {fmSearch},
+  Unit1 in '..\..\мой диплом\исходник\dbex1\DBEx1\Unit1.pas' {fmHello};
+
+{$R *.res}
+
+begin
+  Application.Title:='Диплом';
+  Application.Initialize;
+  Application.CreateForm(TfmMain, fmMain);
+  Application.CreateForm(TfmHello, fmHello);
+  Application.Run;
+end.
